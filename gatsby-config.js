@@ -1,24 +1,50 @@
 module.exports = {
   plugins: [
-    {
+     `gatsby-plugin-sharp`,
+     {
+       resolve: `gatsby-transformer-remark`,
+       options: {
+         plugins: [
+           {
+             resolve: `gatsby-remark-images`,
+             options: {
+                maxWidth: 590,
+             },
+           },
+         ],
+       },
+     },
+     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+	name: `fig`,
+        path: `${__dirname}/content/assets/`,
+      },
+     },
+     {
       resolve: `gatsby-theme-blog`,
-      options: {},
-    },
+      options: {
+      	contentPath: `content/blog`,
+	assetPath: `content/assets`,
+	mdx: true,
+      }, 
+     },
   ],
   // Customize your site metadata:
   siteMetadata: {
-    title: `My Blog Title`,
-    author: `My Name`,
+    title: `ニョロとハムさん`,
+    author: `hamu san`,
     description: `My site description...`,
-    social: [
-      {
-        name: `twitter`,
-        url: `https://twitter.com/gatsbyjs`,
-      },
-      {
-        name: `github`,
-        url: `https://github.com/gatsbyjs`,
-      },
-    ],
+	  
+    // social: [
+    //   {
+    //     name: `twitter`,
+    //     url: `https://twitter.com/gatsbyjs`,
+    //   },
+    //   {
+    //     name: `github`,
+    //     url: `https://github.com/gatsbyjs`,
+    //   },
+    // ],
   },
 }
