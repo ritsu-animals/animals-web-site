@@ -12,16 +12,13 @@ const Footer = ({ socialLinks }) => (
     
     <div>
        <ul>
-          <Link to="/test">Test</Link>
-	  {` `}
-	  {` `}
-	  <Link to="/test2">Test2</Link>
-	  {` `}
-	  {` `}
 	  <Link to="/profile">運営者プロフィール</Link>
 	  {` `}
 	  {` `} 
 	  <Link to="/contact-info">お問合せ先</Link>
+	  {` `}
+	  {` `}
+	  <Link to="/attention">利用規約</Link>
        </ul>
     </div>
     © {new Date().getFullYear()}, ニョロとハムさん
