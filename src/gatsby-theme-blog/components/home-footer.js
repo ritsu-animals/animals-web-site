@@ -19,6 +19,9 @@ const Footer = ({ socialLinks }) => (
 	  {` `}
 	  {` `}
 	  <Link to="/profile">運営者プロフィール</Link>
+	  {` `}
+	  {` `} 
+	  <Link to="/contact-info">お問合せ先</Link>
        </ul>
     </div>
     © {new Date().getFullYear()}, ニョロとハムさん
