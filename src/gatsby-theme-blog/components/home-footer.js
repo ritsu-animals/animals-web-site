@@ -1,15 +1,16 @@
 import React, { Fragment } from "react"
-import { Styled, css } from "theme-ui"
+// import { Styled, css } from "theme-ui"
 import { Link } from "gatsby"
 
 const Footer = ({ socialLinks }) => (
-  <footer
-    css={css({
-      mt: 4,
-      pt: 3,
-    })}
-  >
-    
+  //<footer
+  //  css={css({
+  //    pt: `10px`,
+  //    background: `#e6e6fa`,
+  //  })}
+  //>
+  <footer>
+    <hr/> 
     <div>
        <ul>
 	  <Link to="/profile">運営者プロフィール</Link>
