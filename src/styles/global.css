@@ -1,3 +1,8 @@
 html {
 	background-color: #F7F1E0;
 }
+
+.fig {
+   max-width: 70%;
+   height: auto;
+}
