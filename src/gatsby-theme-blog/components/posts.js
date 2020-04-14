@@ -11,6 +11,10 @@ const Posts = ({ location, posts, siteTitle, socialLinks }) => (
     <main>
       {posts.map(({ node }) => {
         const title = node.title || node.slug
+	const taglists = node.tags
+	const listItems = taglists.map((taglist, index) =>
+		<li key={index}>{taglist}</li>
+	);
         const keywords = node.keywords || []
         return (
           <Fragment key={node.slug}>
@@ -32,6 +36,8 @@ const Posts = ({ location, posts, siteTitle, socialLinks }) => (
                 </Styled.a>
               </Styled.h2>
               <small>{node.date}</small>
+	      <small>{` `}</small>
+              <ul className="tags">{listItems}</ul>
               <Styled.p>{node.excerpt}</Styled.p>
             </div>
           </Fragment>

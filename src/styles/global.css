@@ -7,3 +7,11 @@ html {
    height: auto;
 }
 
+ul.tags li:nth-child(odd){
+	color: #FFA500;
+}
+
+ul.tags li {
+    display: inline;
+    margin-right: 10px;
+}
