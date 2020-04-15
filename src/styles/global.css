@@ -7,11 +7,12 @@ html {
    height: auto;
 }
 
-ul.tags li:nth-child(odd){
-	color: #FFA500;
-}
-
 ul.tags li {
     display: inline;
-    margin-right: 10px;
+    color: #9DA5B3;
+    padding:5px 5px;
+    margin: 50px 10px;
+    font-weight: bold;
+    border: solid 3px #9DA5B3;/*線*/
+    border-radius: 10px;/*角の丸み*/
 }
