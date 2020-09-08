@@ -29,12 +29,6 @@ module.exports = {
 	mdx: true,
       }, 
      },
-     {
-      resolve: `gatsby-plugin-google-adsense`,
-      options: {
-         publisherId: `ca-pub-7689408647365500`,
-      },
-     },
   ],
   // Customize your site metadata:
   siteMetadata: {
